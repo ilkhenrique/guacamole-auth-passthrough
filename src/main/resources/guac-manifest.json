@@ -1,0 +1,8 @@
+{
+  "guacamoleVersion" : "0.9.9",
+  "name" : "Passthrough Authentication",
+  "namespace" : "ext.auth.passthrough",
+  "authProviders" : [
+    "com.github.edouardswiac.guacamole.ext.PassthroughAuthProvider"
+  ]
+}
