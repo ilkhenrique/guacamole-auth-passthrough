@@ -22,5 +22,10 @@ body: protocol=rdp&username=user1&password=p@ssw0rd&param1=var
 
 Display corresponding the remote session
 ```
-GET console.gameanywhere.net/#/?token=e1626c72adbd109a2431c9d707a96d8d12036d4cb890785421bcb427a7eefeb5
+GET yourguac.net/#/?token=e1626c72adbd109a2431c9d707a96d8d12036d4cb890785421bcb427a7eefeb5
 ```
+
+Security note
+------
+
+This auth plugin is insecure by nature as it requires you to send credentials over the wire. HTTPS is strongly recommended!
