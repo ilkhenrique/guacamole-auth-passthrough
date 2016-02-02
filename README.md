@@ -1,4 +1,4 @@
-Guacamole Auth Passthrough
+Guacamole Auth Passthrough [![Build Status](https://travis-ci.org/edouardswiac/guacamole-auth-passthrough.svg?branch=master)](https://travis-ci.org/edouardswiac/guacamole-auth-passthrough)
 =========
 
 Build a config and get its corresponding token
