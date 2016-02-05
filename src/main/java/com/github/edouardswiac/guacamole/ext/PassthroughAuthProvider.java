@@ -37,7 +37,7 @@ public final class PassthroughAuthProvider extends SimpleAuthenticationProvider 
     conf.setParameter("username", req.getParameter("username"));
     conf.setParameter("password", req.getParameter("password"));
 
-    Map<String, String[]> params = req.getParameterMap();
+    Map<String, String[]> params = new HashMap<>(req.getParameterMap());
     params.remove("protocol");
     params.remove("username");
     params.remove("password");
