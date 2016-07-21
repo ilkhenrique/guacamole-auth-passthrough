@@ -1,6 +1,9 @@
 Guacamole Auth Passthrough [![Build Status](https://travis-ci.org/edouardswiac/guacamole-auth-passthrough.svg?branch=master)](https://travis-ci.org/edouardswiac/guacamole-auth-passthrough)
 =========
-
+Deploy
+```
+cp guacamole-auth-passthrough-<version>.jar /etc/guacamole/extensions/
+```
 Build a config and get its corresponding token
 
 ```
