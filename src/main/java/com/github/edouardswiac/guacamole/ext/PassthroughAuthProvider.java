@@ -27,20 +27,16 @@ public final class PassthroughAuthProvider extends SimpleAuthenticationProvider 
     GuacamoleConfiguration conf = new GuacamoleConfiguration();
 
     if (null == req.getParameter("protocol") ||
-        null == req.getParameter("username") ||
-        null == req.getParameter("password")) {
-      LOG.error("protocol/username/password are required");
-      throw new GuacamoleServerException("protocol/username/password are required");
+        null == req.getParameter("hostname") ) {
+      LOG.error("protocol/hostname are required");
+      throw new GuacamoleServerException("protocol/hostname are required");
     }
 
     conf.setProtocol(req.getParameter("protocol"));
-    conf.setParameter("username", req.getParameter("username"));
-    conf.setParameter("password", req.getParameter("password"));
-
+    conf.setParameter("hostname", req.getParameter("hostname"));
     Map<String, String[]> params = new HashMap<>(req.getParameterMap());
     params.remove("protocol");
-    params.remove("username");
-    params.remove("password");
+    params.remove("hostname");
 
     for(String p: params.keySet()) {
       conf.setParameter(p, req.getParameter(p));
