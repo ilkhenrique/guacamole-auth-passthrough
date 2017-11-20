@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
     <version>0.9.9b</version>
     <name>guacamole-auth-passthrough</name>
-    <url>https://github.com/edouardswiac/guacamole-auth-passthrough</url>
+    <url>https://github.com/dnnis/guacamole-auth-passthrough</url>
 
     <licenses>
         <license>
@@ -20,8 +20,8 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/edouardswiac/guacamole-auth-passthrough</url>
-        <connection>scm:git:git://github.com/edouardswiac/guacamole-auth-passthrough.git</connection>
+        <url>https://github.com/dnnis/guacamole-auth-passthrough</url>
+        <connection>scm:git:git://github.com/dnnis/guacamole-auth-passthrough.git</connection>
     </scm>
 
     <developers>
@@ -39,7 +39,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <guac.version>0.9.9</guac.version>
+        <guac.version>0.9.13-incubating</guac.version>
         <logback.version>1.1.3</logback.version>
         <slf4j.version>1.7.14</slf4j.version>
     </properties>
