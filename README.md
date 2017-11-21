@@ -8,9 +8,9 @@ Build a config and get its corresponding token
 
 ```
 POST yourguac.net/api/tokens
-body: protocol=rdp&username=user1&password=p@ssw0rd&param1=var
+body: protocol=rdp&hostname=192.168.1.1&param1=var
 ```
-
+hostname and protocol are required
 
 ```
 {
