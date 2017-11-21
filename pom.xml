@@ -7,7 +7,7 @@
     <groupId>com.github.edouardswiac</groupId>
     <artifactId>guacamole-auth-passthrough</artifactId>
     <packaging>jar</packaging>
-    <version>0.9.9b</version>
+    <version>0.9.13-incubating</version>
     <name>guacamole-auth-passthrough</name>
     <url>https://github.com/dnnis/guacamole-auth-passthrough</url>
 
@@ -114,7 +114,7 @@
 
         <!-- Guacamole Java API -->
         <dependency>
-            <groupId>org.glyptodon.guacamole</groupId>
+            <groupId>org.apache.guacamole</groupId>
             <artifactId>guacamole-common</artifactId>
             <version>${guac.version}</version>
             <scope>provided</scope>
@@ -122,7 +122,7 @@
 
         <!-- Guacamole Extension API -->
         <dependency>
-            <groupId>org.glyptodon.guacamole</groupId>
+            <groupId>org.apache.guacamole</groupId>
             <artifactId>guacamole-ext</artifactId>
             <version>${guac.version}</version>
             <scope>provided</scope>
