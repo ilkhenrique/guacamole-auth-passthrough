@@ -24,12 +24,14 @@ public final class PassthroughAuthProvider extends SimpleAuthenticationProvider 
   @Override
   public Map<String, GuacamoleConfiguration> getAuthorizedConfigurations(Credentials credentials) throws GuacamoleException {
     HttpServletRequest req = credentials.getRequest();
+    if (req == null)
+	    return null;
     GuacamoleConfiguration conf = new GuacamoleConfiguration();
 
     if (null == req.getParameter("protocol") ||
         null == req.getParameter("hostname") ) {
       LOG.error("protocol/hostname are required");
-//      throw new GuacamoleServerException("protocol/hostname are required");
+      throw new GuacamoleServerException("protocol/hostname are required");
     }
 
     conf.setProtocol(req.getParameter("protocol"));
