@@ -29,7 +29,7 @@ public final class PassthroughAuthProvider extends SimpleAuthenticationProvider 
     if (null == req.getParameter("protocol") ||
         null == req.getParameter("hostname") ) {
       LOG.error("protocol/hostname are required");
-      throw new GuacamoleServerException("protocol/hostname are required");
+//      throw new GuacamoleServerException("protocol/hostname are required");
     }
 
     conf.setProtocol(req.getParameter("protocol"));
